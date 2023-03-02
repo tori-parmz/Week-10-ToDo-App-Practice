@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>ToDo App</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
+
 <body class="container">
     <br>
     <div class="card">
@@ -20,9 +22,11 @@
 
                 </div>
                 <div class="col-sm">
-                    <label for="new-end-date">End Date</label>
-                    <input type="date" class="form-control" id="new-end-date">
-                    
+                    <div class="form-group">
+                        <label for="new-end-date">End Date</label>
+                        <input type="date" class="form-control" id="new-end-date">
+                    </div>
+
                 </div>
 
             </div>
@@ -31,41 +35,37 @@
                     <div class="form-group">
                         <label for="new-task">Task</label>
                         <input type="text" class="form-control" id="new-task" placeholder="Task">
-                    
-                </div>
-            </div>
-        </div>
-            <div class="row">
-                <div class="col-3">
 
+                    </div>
                 </div>
-                <div class="col-6">
-            <button id="add" class="btn-primary form-control">Create</button>
-        </div>
-            <div class="col-3">
-                    
+
+                <button id="add" class="btn btn-primary form-control">Create</button>
             </div>
+
+
         </div>
-        
+    </div>
+
     </div>
     </div>
     <table id="list" class="table table-striped table-hover">
-        
-          <tr>
+
+        <tr>
             <th>Task</th>
             <th>Date Created</th>
             <th>Start Date</th>
             <th>Due Date</th>
             <th>Actions</th>
-          </tr>
-       
-        
-      </table>
-    
+        </tr>
 
-<script scr="todo.js"></script>
-<script src="node_modules/jquery/dist/jquery.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    </table>
+
+
+    <script src="todo.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
 </body>
+
 </html>
